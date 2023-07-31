@@ -1,6 +1,6 @@
 # Proyecto_Blockbuster-SQL
 
-![Blockbuster-Emblem](https://github.com/borjadola/Proyecto_Blockbuster-SQL/assets/132678800/5bad7f0e-083c-430f-a4b0-541348fc416e)
+!![Blockbuster-Emblem](https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/73e1810c-d1ee-4ce2-9157-1b91f215f4f3)
 
 ## Objetivo:
 
