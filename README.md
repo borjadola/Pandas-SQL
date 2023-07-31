@@ -20,7 +20,7 @@ Realización de una base de datos relacional en SQL para la reapertura de una ti
 
    Se puede ver que los datos son bastante consistentes y no hay apenas duplicidad ni valores nulos. Encuentro tablas con datos de nombre de películas y actores, así como información sobre estos, y columnas en varias tablas que hacen referencia a la relación entre estas por medio de ID.
    
-   <img width="383" alt="Ej tabla_1" src="https://github.com/borjadola/Proyecto_Blockbuster-SQL/assets/132678800/4550e86d-ce5c-45b7-8724-9325a2e94725">
+   <<img width="383" alt="Ej tabla_1" src="https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/f5e03baf-cec7-418e-ae02-1b4ec93d2c9b">
    
    Ejemplo de tipo de tabla que nos encontramos en la base de datos proporcionada.
 
@@ -28,7 +28,7 @@ Realización de una base de datos relacional en SQL para la reapertura de una ti
 
    Este diagrama lo he hecho en base a un solo establecimiento. Si en el futuro se abriesen más, habría que añadir nuevas tablas y relaciones. Paso a mostrar el diagrama y comento. Los tipos de datos por columna están programados en base a la información que vamos a subir desde Pandas.
 
-   <img width="837" alt="DER" src="https://github.com/borjadola/Proyecto_Blockbuster-SQL/assets/132678800/52b7323b-4b9a-41e7-9a1a-9a57ee8dccb0">
+   <img width="837" alt="DER" src="https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/2b0561f2-845d-4c4b-9a5d-009938092454">
 
    Tenemos las siguientes tablas:
 
@@ -50,23 +50,23 @@ Realización de una base de datos relacional en SQL para la reapertura de una ti
 
    Primera relación de id´s. Relacionamos los id de 'Category' con sus películas en la tabla de 'film_actor' (Old_HDD) traspasamos estos datos, mediante un diccionario, a la tabla de 'Films'. Como había películas que no tenían categoría, y esto nos puede dar un error al subir los datos a SQL, tomo la decisión de añadir un valor nuevo a 'Category'; id 0 y categoría 'no category'. Recorremos la columna creada 'category_id' de 'Films' e introducimos las categorías a cada película, proporcionando 0 a las que no tienen. Dejo una imagen del código.
 
-   <img width="993" alt="Ej tabla_2" src="https://github.com/borjadola/Proyecto_Blockbuster-SQL/assets/132678800/6c2d1b98-d17f-45cb-9bb0-c481ec451fd8">
+   <img width="993" alt="Ej tabla_2" src="https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/f080c3a3-b78a-43ad-b3c1-4726b46b6e5c">
 
-   <img width="1001" alt="Ej tabla_3" src="https://github.com/borjadola/Proyecto_Blockbuster-SQL/assets/132678800/15678e73-683b-4867-b323-6ccaf049de3f">
+   <img width="1001" alt="Ej tabla_3" src="https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/2a5d0c1b-1727-4772-8709-fd4a9adcde22">
 
-   <img width="997" alt="Ej tabla_4" src="https://github.com/borjadola/Proyecto_Blockbuster-SQL/assets/132678800/5d05ebbe-5428-4707-9e83-c9149ea92708">
-
+   <img width="997" alt="Ej tabla_4" src="https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/bd2b0ff7-369c-4213-a9de-82781d30a5b0">
+   
    La segunda relación de id´s será para construir la tabla relación entre 'Films' y 'Actor'. Construimos nuestros diccionarios de actor y su id y de películas con su id y los volvamos en las columnas creadas en film_actor. Esta tabla le dejaremos como estructura estas dos columnas únicamente, pues el resto ya nos nos sirve aquí, ya tenemos es información en otras columnas.
 
-   <img width="572" alt="Ej tabla_5" src="https://github.com/borjadola/Proyecto_Blockbuster-SQL/assets/132678800/9bd7ef01-eda1-4292-bf46-b3817f89e837">
+   <img width="572" alt="Ej tabla_5" src="https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/fe8f7c68-132c-43fb-8921-4bcf38f32ed1">
 
-   <img width="151" alt="Ej tabla_6" src="https://github.com/borjadola/Proyecto_Blockbuster-SQL/assets/132678800/d6405321-ad73-47a1-b15b-f7807c2d246f">
+   <img width="151" alt="Ej tabla_6" src="https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/7d436cbc-19bc-40a5-9475-a507cc60effe">
 
 4. Para finalizar la limpieza hago una reestructuración del orden y número de columnas por tabla para que sea igual que en el DER.
 
 5. Ahora sí, tenemos los datos preparados para hacer la migración a nuestra base de datos SQL. He elegido hacerlo con ALQUEMY por la facilidad que tiene para crear el cursos y subir los datos.
 
-   <img width="1006" alt="E tabla_7" src="https://github.com/borjadola/Proyecto_Blockbuster-SQL/assets/132678800/f47eb4f2-4e76-4c04-80f0-c26a4b9c4a9b">
+  <img width="1006" alt="E tabla_7" src="https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/64f2a741-045e-455f-81ad-d7514ec24fe4">
 
 ## Conclusión:
 
