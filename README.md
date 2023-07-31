@@ -74,4 +74,11 @@ Finalizada la exportación de datos de pandas a mySQL ya tenemos nuestra base de
 
 ## Consulta de nuestra base de datos:
 
-Aquí proporciono una serie de queries para visualizar nuestra base de datos construida.
+- Número de películas por categoría.
+  
+  <img width="158" alt="query1" src="https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/bc15b499-b83f-4010-896a-87fcec317fff">
+
+- Títulos por duración.
+
+  <img width="179" alt="query2" src="https://github.com/borjadola/Proyecto_Pandas_SQL/assets/132678800/06b17e54-fd82-4c24-864d-774739f96faf">
+  
